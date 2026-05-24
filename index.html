@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FAMILY APPS</title>
+
+<link rel="icon" type="image/png"
+href="https://k.top4top.io/p_3783xyk9b1.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<style>
+
+/* =========================
+ROOT
+========================= */
+
+:root{
+
+--bg:#090114;
+--bg2:#140326;
+
+--card:#16052c;
+--card2:#220743;
+
+--text:#ffffff;
+--sub:#d7c8ff;
+
+--main:#ffcc29;
+--main2:#ff7a00;
+
+--purple:#8b3dff;
+--purple2:#c24fff;
+
+--border:rgba(255,255,255,.08);
+
+}
+
+/* =========================
+RESET
+========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Cairo',sans-serif;
+
+background:
+radial-gradient(circle at top right,rgba(194,79,255,.22) 0%,transparent 25%),
+radial-gradient(circle at bottom left,rgba(255,122,0,.18) 0%,transparent 25%),
+linear-gradient(180deg,#090114,#140326 100%);
+
+color:var(--text);
+
+overflow-x:hidden;
+
+}
+
+/* =========================
+SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+
+background:
+linear-gradient(180deg,#ffcc29,#b347ff);
+
+border-radius:20px;
+
+}
+
+/* =========================
+HEADER
+========================= */
+
+header{
+
+position:fixed;
+top:0;
+width:100%;
+z-index:999;
+
+backdrop-filter:blur(18px);
+
+background:rgba(8,2,18,.72);
+
+border-bottom:1px solid rgba(255,255,255,.05);
+
+box-shadow:
+0 0 30px rgba(179,71,255,.18);
+
+}
+
+.navbar{
+
+width:92%;
+max-width:1400px;
+
+margin:auto;
+
+height:80px;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+}
+
+/* =========================
+LOGO
+========================= */
+
+.logo{
+
+font-size:30px;
+font-weight:900;
+
+background:
+linear-gradient(90deg,#ffcc29,#ff7a00,#b347ff);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+letter-spacing:1px;
+
+}
+
+/* =========================
+NAV LINKS
+========================= */
+
+.nav-links{
+
+display:flex;
+align-items:center;
+gap:24px;
+
+}
+
+.nav-links a{
+
+color:#fff;
+text-decoration:none;
+
+font-size:16px;
+font-weight:700;
+
+position:relative;
+
+transition:.3s;
+
+}
+
+.nav-links a::after{
+
+content:"";
+
+position:absolute;
+
+bottom:-8px;
+right:0;
+
+width:0%;
+height:3px;
+
+border-radius:20px;
+
+background:
+linear-gradient(90deg,#ffcc29,#b347ff);
+
+transition:.4s;
+
+}
+
+.nav-links a:hover{
+
+color:#ffcc29;
+
+}
+
+.nav-links a:hover::after{
+
+width:100%;
+
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+padding:150px 20px 80px;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+width:700px;
+height:700px;
+
+background:
+radial-gradient(circle,
+rgba(179,71,255,.22),
+transparent 70%);
+
+top:-180px;
+right:-200px;
+
+filter:blur(90px);
+
+}
+
+.hero::after{
+
+content:"";
+
+position:absolute;
+
+width:500px;
+height:500px;
+
+background:
+radial-gradient(circle,
+rgba(255,122,0,.18),
+transparent 70%);
+
+bottom:-120px;
+left:-120px;
+
+filter:blur(80px);
+
+}
+
+.hero-content{
+
+max-width:900px;
+
+position:relative;
+z-index:2;
+
+animation:fadeUp 1s ease;
+
+}
+
+.hero h1{
+
+font-size:72px;
+
+line-height:1.3;
+
+margin-bottom:22px;
+
+font-weight:900;
+
+text-shadow:
+0 0 30px rgba(179,71,255,.3);
+
+}
+
+.hero h1 span{
+
+background:
+linear-gradient(90deg,#ffcc29,#ff7a00,#b347ff);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+line-height:2;
+
+color:var(--sub);
+
+margin-bottom:40px;
+
+}
+
+/* =========================
+BUTTONS
+========================= */
+
+.hero-btn,
+.download-btn{
+
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:12px;
+
+padding:18px 34px;
+
+border-radius:22px;
+
+text-decoration:none;
+
+font-weight:800;
+
+background:
+linear-gradient(135deg,
+#ffcc29,
+#ff7a00,
+#b347ff);
+
+background-size:200% 200%;
+
+color:white;
+
+border:1px solid rgba(255,255,255,.1);
+
+box-shadow:
+0 15px 40px rgba(179,71,255,.35);
+
+transition:.45s;
+
+position:relative;
+
+overflow:hidden;
+
+animation:gradientMove 7s ease infinite;
+
+}
+
+.download-btn{
+width:100%;
+}
+
+.hero-btn:hover,
+.download-btn:hover{
+
+transform:
+translateY(-6px)
+scale(1.03);
+
+box-shadow:
+0 20px 50px rgba(179,71,255,.45);
+
+}
+
+@keyframes gradientMove{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+/* =========================
+SECTION
+========================= */
+
+.section{
+
+width:92%;
+max-width:1400px;
+
+margin:auto;
+
+padding-bottom:100px;
+
+}
+
+.section-title{
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+font-size:52px;
+
+font-weight:900;
+
+background:
+linear-gradient(90deg,#ffcc29,#b347ff);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+margin-bottom:12px;
+
+}
+
+.section-title p{
+
+font-size:18px;
+
+color:#d6c8ff;
+
+}
+
+/* =========================
+GRID
+========================= */
+
+.apps-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(320px,1fr));
+
+gap:32px;
+
+}
+
+/* =========================
+CARD
+========================= */
+
+.card{
+
+background:
+linear-gradient(180deg,
+rgba(25,5,45,.95),
+rgba(16,4,30,.96));
+
+border:1px solid rgba(255,255,255,.07);
+
+border-radius:32px;
+
+overflow:hidden;
+
+transition:.5s;
+
+position:relative;
+
+backdrop-filter:blur(14px);
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.35);
+
+}
+
+.card::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:
+linear-gradient(180deg,
+rgba(255,255,255,.05),
+transparent);
+
+pointer-events:none;
+
+}
+
+.card:hover{
+
+transform:
+translateY(-12px)
+scale(1.015);
+
+box-shadow:
+0 25px 60px rgba(179,71,255,.3);
+
+}
+
+/* =========================
+IMAGE
+========================= */
+
+.card img{
+
+width:100%;
+height:230px;
+
+object-fit:cover;
+
+transition:.7s;
+
+}
+
+.card:hover img{
+
+transform:scale(1.08);
+
+}
+
+/* =========================
+CARD CONTENT
+========================= */
+
+.card-content{
+
+padding:26px;
+
+}
+
+.app-top{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+gap:15px;
+
+margin-bottom:15px;
+
+}
+
+.platform{
+
+width:58px;
+height:58px;
+
+border-radius:18px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:25px;
+
+background:
+linear-gradient(135deg,
+rgba(255,204,41,.15),
+rgba(179,71,255,.22));
+
+border:1px solid rgba(255,255,255,.08);
+
+box-shadow:
+0 0 25px rgba(179,71,255,.15);
+
+flex-shrink:0;
+
+}
+
+.android{
+color:#ffcc29;
+}
+
+.apple{
+color:#c24fff;
+}
+
+.card h3{
+
+font-size:28px;
+
+margin-bottom:10px;
+
+font-weight:900;
+
+}
+
+.card p{
+
+color:#d6c8ff;
+
+line-height:2;
+
+margin-bottom:22px;
+
+font-size:15px;
+
+}
+
+/* =========================
+CODE BOX
+========================= */
+
+.code-box{
+
+margin-top:18px;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+gap:10px;
+
+padding:16px 18px;
+
+border-radius:20px;
+
+background:
+linear-gradient(135deg,
+rgba(255,255,255,.04),
+rgba(179,71,255,.08));
+
+border:1px solid rgba(255,255,255,.06);
+
+backdrop-filter:blur(12px);
+
+}
+
+.app-code{
+
+font-size:24px;
+font-weight:900;
+
+letter-spacing:2px;
+
+color:#ffcc29;
+
+}
+
+.copy-btn{
+
+width:50px;
+height:50px;
+
+border:none;
+border-radius:16px;
+
+cursor:pointer;
+
+background:
+linear-gradient(135deg,
+rgba(255,204,41,.15),
+rgba(179,71,255,.2));
+
+border:1px solid rgba(255,255,255,.08);
+
+color:white;
+
+font-size:18px;
+
+transition:.3s;
+
+}
+
+.copy-btn:hover{
+
+background:
+linear-gradient(135deg,
+#ffcc29,
+#b347ff);
+
+transform:scale(1.08);
+
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+
+padding:40px 20px;
+
+text-align:center;
+
+color:#d6c8ff;
+
+border-top:1px solid rgba(255,255,255,.06);
+
+margin-top:60px;
+
+font-size:15px;
+
+background:
+rgba(10,2,20,.65);
+
+backdrop-filter:blur(10px);
+
+}
+
+/* =========================
+WHATSAPP
+========================= */
+
+.whatsapp{
+
+position:fixed;
+
+left:20px;
+bottom:20px;
+
+width:68px;
+height:68px;
+
+border-radius:50%;
+
+background:
+linear-gradient(135deg,#25d366,#16a34a);
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:34px;
+
+color:white;
+
+text-decoration:none;
+
+z-index:9999;
+
+box-shadow:
+0 0 30px rgba(37,211,102,.45);
+
+transition:.3s;
+
+}
+
+.whatsapp:hover{
+
+transform:scale(1.12);
+
+}
+
+/* =========================
+ANIMATION
+========================= */
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+.nav-links{
+display:none;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.section-title h2{
+font-size:36px;
+}
+
+.apps-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+FAMILY APPS
+</div>
+
+<div class="nav-links">
+
+<a href="#">الرئيسية</a>
+<a href="#apps">التطبيقات</a>
+<a href="#">تواصل</a>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+
+أفضل <span>تطبيقات IPTV</span><br>
+
+للاندرويد والايفون
+
+</h1>
+
+<p>
+
+منصة احترافية لتحميل أحدث تطبيقات IPTV
+بتصميم عصري وتجربة استخدام سريعة وآمنة
+
+</p>
+
+<a href="#apps" class="hero-btn">
+
+<i class="fa-solid fa-download"></i>
+
+ابدأ التحميل
+
+</a>
+
+</div>
+
+</section>
+
+<section class="section" id="apps">
+
+<div class="section-title">
+
+<h2>التطبيقات</h2>
+
+<p>
+
+6 تطبيقات اندرويد + 4 تطبيقات ايفون
+
+</p>
+
+</div>
+
+<div class="apps-grid" id="appsContainer"></div>
+
+</section>
+
+<footer>
+
+© 2026 FAMILY APPS — ALL RIGHTS RESERVED
+
+</footer>
+
+<a href="https://wa.me/9647809522129"
+class="whatsapp"
+target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<script>
+
+const apps = [
+
+/* ANDROID */
+
+{
+name:"FAMILY PLUS",
+platform:"android",
+icon:"fa-brands fa-android",
+image:"https://apps.familyiptv.net/FAMILY-PLUS.jpg",
+description:"تطبيق فاملي بلص يعمل عن طريق الاكتف كود او اليوزرنيم وكلمة المرور",
+download:"https://familychannels.tv/1/Family-activecode-plus.apk",
+buttonText:"تحميل للاندرويد",
+code:"630379"
+},
+
+{
+name:"FAMILY PRO",
+platform:"android",
+icon:"fa-brands fa-android",
+image:"https://apps.familyiptv.net/family-pro.jpg",
+description:"تطبيق فاملي برو يعد الافضل وفيه خيارات متعددة للدخول",
+download:"https://play.google.com/store/apps/details?id=com.shadeed.familypro",
+buttonText:"تحميل للاندرويد",
+code:"3520676"
+},
+
+{
+name:"FAMILY ULTRA",
+platform:"android",
+icon:"fa-brands fa-android",
+image:"https://apps.familyiptv.net/family-ultra.jpg",
+description:"تطبيق فاملي الترا خفيف وسريع وسهل الاستخدام",
+download:"https://play.google.com/store/apps/details?id=com.shadeed.familyultra",
+buttonText:"تحميل للاندرويد",
+code:"822646"
+},
+
+{
+name:"FAMILY DIOND",
+platform:"android",
+icon:"fa-brands fa-android",
+image:"https://apps.familyiptv.net/FAMILY-DIOND.jpg",
+description:"يدعم جميع صيغ IPTV مع سرعة عالية وثبات ممتاز.",
+download:"https://familychannels.tv/1/FamilyDiamond.apk",
+buttonText:"تحميل للاندرويد",
+code:"8085964"
+},
+
+{
+name:"FAMILY GOLD",
+platform:"android",
+icon:"fa-brands fa-android",
+image:"https://apps.familyiptv.net/family-gold.jpg",
+description:"تطبيق فاملي جولد مدمج مع الـVPN لتخطي حجب شركات الانترنت",
+download:"https://familychannels.tv/1/FamilyGold.apk",
+buttonText:"تحميل للاندرويد",
+code:"9577153"
+},
+
+{
+name:"FAMILY 4K VPN",
+platform:"android",
+icon:"fa-brands fa-android",
+image:"https://apps.familyiptv.net/family-vpn.jpg",
+description:"تطبيق فاملي 4K VPN سريع وخفيف مع VPN مدمج",
+download:"https://familychannels.tv/1/Family-PRO-user-v4.apk",
+buttonText:"تحميل للاندرويد",
+code:"919624"
+},
+
+/* IOS */
+
+{
+name:"NEXT+",
+platform:"ios",
+icon:"fa-brands fa-apple",
+image:"https://apps.familyiptv.net/next%2B.jpg",
+description:"تطبيق نيكست بلص خاص لمشتركينا يدعم الايفون والايباد.",
+download:"https://apps.apple.com/us/app/next/id6443335504",
+buttonText:"تحميل للايفون"
+},
+
+{
+name:"CASTORA",
+platform:"ios",
+icon:"fa-brands fa-apple",
+image:"https://apps.familyiptv.net/casrora.jpg",
+description:"تطبيق كاستورا خاص لمشتركينا يدعم الايفون والايباد.",
+download:"https://apps.apple.com/us/app/castora/id6760588570",
+buttonText:"تحميل للايفون"
+},
+
+{
+name:"VU PLAYER",
+platform:"ios",
+icon:"fa-brands fa-apple",
+image:"https://apps.familyiptv.net/vu.jpg",
+description:"واجهة أنيقة وسريعة لمحبي البث المباشر.",
+download:"https://apps.apple.com/us/app/vu-iptv-player/id6526480705",
+buttonText:"تحميل للايفون"
+},
+
+{
+name:"SMARTERS LITE",
+platform:"ios",
+icon:"fa-brands fa-apple",
+image:"https://apps.familyiptv.net/smarters.jpg",
+description:"أفضل مشغل IPTV للايفون بجودة ممتازة.",
+download:"https://apps.apple.com/app/id1628995509",
+buttonText:"تحميل للايفون"
+}
+
+];
+
+const appsContainer =
+document.getElementById("appsContainer");
+
+appsContainer.innerHTML =
+apps.map(app => `
+
+<div class="card">
+
+<img src="${app.image}" alt="${app.name}">
+
+<div class="card-content">
+
+<div class="app-top">
+
+<h3>${app.name}</h3>
+
+<div class="platform ${app.platform}">
+
+<i class="${app.icon}"></i>
+
+</div>
+
+</div>
+
+<p>
+
+${app.description}
+
+</p>
+
+<a href="${app.download}"
+class="download-btn"
+target="_blank">
+
+<i class="fa-solid fa-download"></i>
+
+${app.buttonText}
+
+</a>
+
+${app.platform === "android" ? `
+
+<div class="code-box">
+
+<span class="app-code">
+
+${app.code}
+
+</span>
+
+<button class="copy-btn"
+onclick="copyCode(this)">
+
+<i class="fa-regular fa-copy"></i>
+
+</button>
+
+</div>
+
+` : ""}
+
+</div>
+
+</div>
+
+`).join("");
+
+function copyCode(button){
+
+const code =
+button.parentElement
+.querySelector(".app-code")
+.innerText;
+
+navigator.clipboard.writeText(code);
+
+button.innerHTML =
+'<i class="fa-solid fa-check"></i>';
+
+setTimeout(()=>{
+
+button.innerHTML =
+'<i class="fa-regular fa-copy"></i>';
+
+},2000);
+
+}
+
+</script>
+
+</body>
+</html>
